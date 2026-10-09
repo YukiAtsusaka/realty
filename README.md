@@ -28,4 +28,4 @@ The `CNAME` file sets the intended primary domain. Update it only if a different
 
 ## Contact form
 
-The English and Japanese contact forms submit to FormSubmit, which forwards each inquiry to the existing site email address (`chinari@sekihomerealty.com`) without opening the visitor's email application. After the first production form submission, FormSubmit sends an activation email to that address. Open its confirmation link once to enable delivery; no changes to the static site are needed afterward.
+The English and Japanese contact forms submit to FormSubmit, which forwards each inquiry to the existing site email address (`chinari@sekihomerealty.com`) without opening the visitor's email application. The visitor stays on the page, sees an in-page confirmation after the submission completes, and receives an automatic email containing their submitted inquiry. After the first production form submission, FormSubmit sends an activation email to that address. Open its confirmation link once to enable delivery; no changes to the static site are needed afterward.
