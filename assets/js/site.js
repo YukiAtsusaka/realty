@@ -1,3 +1,6 @@
 document.querySelector('.menu-toggle')?.addEventListener('click', function () { const nav = document.querySelector('.site-nav'); const open = nav.classList.toggle('open'); this.setAttribute('aria-expanded', open); });
 document.querySelectorAll('[data-year]').forEach((el) => { el.textContent = new Date().getFullYear(); });
-document.querySelector('.contact-form')?.addEventListener('submit', (event) => { event.preventDefault(); const form = event.currentTarget; const name = form.querySelector('[name=name]').value.trim(); const email = form.querySelector('[name=email]').value.trim(); const message = form.querySelector('[name=message]').value.trim(); window.location.href = `mailto:chinari@sekihomerealty.com?subject=${encodeURIComponent('Website inquiry from ' + name)}&body=${encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\n' + message)}`; });
+if (new URLSearchParams(window.location.search).get('sent') === '1') {
+  const success = document.querySelector('.form-success');
+  if (success) success.hidden = false;
+}

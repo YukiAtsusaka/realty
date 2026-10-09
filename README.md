@@ -25,3 +25,7 @@ Static, GitHub Pages-ready website for [sekihomerealty.com](https://sekihomereal
 Keep all existing mail records (MX, SPF, DKIM, and DMARC) unchanged.
 
 The `CNAME` file sets the intended primary domain. Update it only if a different domain will be used.
+
+## Contact form
+
+The English and Japanese contact forms submit to FormSubmit, which forwards each inquiry to the existing site email address (`chinari@sekihomerealty.com`) without opening the visitor's email application. After the first production form submission, FormSubmit sends an activation email to that address. Open its confirmation link once to enable delivery; no changes to the static site are needed afterward.
